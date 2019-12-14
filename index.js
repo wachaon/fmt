@@ -1,5 +1,5 @@
-const prettier = require( 'prettier' )
-const babylon = require( 'parser-babylon' )
+const prettier = require( '/node_modules/prettier' )
+const babylon = require( '/node_modules/parser-babylon' )
 
 module.exports = {
     prettier,
