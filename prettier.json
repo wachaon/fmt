@@ -1,4 +1,4 @@
-﻿{
+{
     "{3CA0D7E4-493D-4641-90D1-3D016461E1CD}": {
         "source": "const prettier = require( '/node_modules/prettier' )\r\nconst babylon = require( '/node_modules/parser-babylon' )\r\n\r\nmodule.exports = {\r\n    prettier,\r\n    babylon\r\n}\r\n",
         "path": "{prettier}/index.js",
