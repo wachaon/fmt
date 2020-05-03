@@ -1,0 +1,28 @@
+{
+  "name": "prettier",
+  "version": "0.0.5",
+  "description": "prettier running on wes",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wachaon/prettier.git"
+  },
+  "keywords": [
+    "WSH",
+    "WindowsScriptHost",
+    "JScript",
+    "wes",
+    "prettier"
+  ],
+  "author": "wachaon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wachaon/prettier/issues"
+  },
+  "homepage": "https://github.com/wachaon/prettier#readme"
+}
