@@ -20,7 +20,7 @@ const defaultOption = {
 const CLI = wes.Modules[wes.main].path === __filename
 
 // When called as a script from the command line
-if (CLI) {
+if (CLI && __filename !== '{wes}/bundle') {
     const { unnamed, named } = require('argv')
     return prettier_format.apply(null, [...unnamed, named].slice(1))
 }
