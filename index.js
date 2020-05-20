@@ -78,4 +78,4 @@ function prettier_format(spec, opt = {}) {
     } else console.log(result)
 }
 
-module.exports = { format: prettier_format }
+module.exports = { format: prettier_format, option: defaultOption }
