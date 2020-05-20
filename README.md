@@ -27,3 +27,9 @@ When used as a CLI
 ```shell
 wes @wachaon/prettier usage -w
 ```
+
+## CLI option
+
+| name      | short name | description     |
+|-----------|------------|-----------------|
+| `--write` | `-w`       | Whether to save |

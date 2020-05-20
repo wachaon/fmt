@@ -1,6 +1,6 @@
 {
   "name": "prettier",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "prettier running on wes",
   "main": "index.js",
   "dependencies": {},
