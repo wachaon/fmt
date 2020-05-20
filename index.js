@@ -1,4 +1,4 @@
-const { readTextFileSync, writeTextFileSync } = require('filesystem')
+const { readTextFileSync, writeTextFileSync, existsFileSync } = require('filesystem')
 const { resolve, extname } = require('pathname')
 
 const prettier = require('/node_modules/prettier')
@@ -53,6 +53,12 @@ function normalizeSpec(spec) {
 }
 
 function prettier_format(spec, opt = {}) {
+    let filespec = null
+    if (CLI) {
+        if (_isObject(spec)) throw new Error('Please specify a file. "' + filespec + '"')
+        filespec = normalizeSpec(spec)
+        if (!existsFileSync(filespec)) throw new Error('File does not exist. "' + filespec + '"')
+    }
     const source = CLI ? readTextFileSync(normalizeSpec(spec)) : spec
     const canWritable = _has(opt, 'w') || _has(opt, 'write')
 
@@ -72,7 +78,6 @@ function prettier_format(spec, opt = {}) {
 
     if (!CLI) return result
     if (canWritable) {
-        const filespec = normalizeSpec(spec)
         writeTextFileSync(filespec, result)
         console.log(`"${filespec}" format completed.`)
     } else console.log(result)

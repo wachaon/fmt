@@ -30,6 +30,6 @@ wes @wachaon/prettier usage -w
 
 ## CLI option
 
-| name      | short name | description     |
-|-----------|------------|-----------------|
-| `--write` | `-w`       | Whether to save |
+| name      | short name | description                 |
+|-----------|------------|-----------------------------|
+| `--write` | `-w`       | Overwrite and save the file |
