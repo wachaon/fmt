@@ -9,6 +9,10 @@ const defaultOption = {
     plugins: [babel]
 }
 
+const prettierrc = resolve(process.cwd(), '.prettierrc')
+if (existsFileSync(prettierrc))
+    defaultOption = Object.assign(defaultOption, JSON.parse(readTextFileSync(prettierrc)))
+
 // Whether it was executed directly on the command line
 const CLI = wes.Modules[wes.main].path === __filename
 
