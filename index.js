@@ -4,7 +4,7 @@ const { resolve, extname } = require('pathname')
 const prettier = require('/node_modules/prettier')
 const babel = require('/node_modules/babel')
 
-const defaultOption = {
+let defaultOption = {
     parser: 'babel',
     plugins: [babel]
 }
