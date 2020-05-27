@@ -6,14 +6,7 @@ const babel = require('/node_modules/babel')
 
 const defaultOption = {
     parser: 'babel',
-    plugins: [babel],
-    semi: false,
-    singleQuote: true,
-    bracketSpacing: true,
-    endOfLine: 'crlf',
-    tabWidth: 4,
-    printWidth: 120,
-    trailingComma: 'none'
+    plugins: [babel]
 }
 
 // Whether it was executed directly on the command line
