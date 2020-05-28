@@ -17,6 +17,7 @@ if (existsFileSync(prettierrc)) {
     )
 }
 
+
 // Whether it was executed directly on the command line
 const CLI = wes.Modules[wes.main].path === __filename
 
@@ -26,11 +27,13 @@ if (CLI && __filename !== '{wes}/bundle') {
     return prettier_format.apply(null, [...unnamed, named].slice(1))
 }
 
+
 // processing
 function _isObject(obj) {
     if (obj == null) return false
     return Object.prototype.toString.call(obj) === '[object Object]'
 }
+
 function _has(obj, key) {
     return _isObject(obj) && key in obj
 }
