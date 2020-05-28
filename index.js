@@ -1,8 +1,8 @@
 const { readTextFileSync, writeTextFileSync, existsFileSync } = require('filesystem')
 const { resolve, extname } = require('pathname')
 
-const prettier = require(resolve(process.cwd(),'node_modules/prettier.js'))
-const babel = require(resolve(process.cwd(), 'node_modules/babel.js'))
+const prettier = require('prettier')
+const babel = require('babel.js')
 
 let defaultOption = {
     parser: 'babel',
