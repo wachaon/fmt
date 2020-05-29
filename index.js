@@ -10,12 +10,10 @@ let defaultOption = {
 }
 
 const prettierrc = resolve(process.cwd(), '.prettierrc')
-if (existsFileSync(prettierrc)) {
-    defaultOption = Object.assign(
-        defaultOption,
-        JSON.parse(readTextFileSync(prettierrc))
-    )
-}
+try {
+    const optionrc = JSON.parse(readTextFileSync(prettierrc))
+    defaultOption = Object.assign(defaultOption, optionrc)
+} catch (error) {}
 
 
 // Whether it was executed directly on the command line
