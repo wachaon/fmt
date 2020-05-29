@@ -1,4 +1,4 @@
-const prettier = require('@wachaon/prettier')
+const prettier = require('@wachaon/fmt')
 
 const option = {
     tabWidth: 2

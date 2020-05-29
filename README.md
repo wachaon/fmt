@@ -1,4 +1,4 @@
-# prettier
+# fmt
 This module enables wes to run [prettier](https://github.com/prettier/prettier)
 
 This module updated the corresponding [prettier](https://github.com/prettier/prettier) version to `2.0.5`
@@ -6,7 +6,7 @@ This module updated the corresponding [prettier](https://github.com/prettier/pre
 ## install
 
 ```
-wes install @wachaon/prettier
+wes install @wachaon/fmt
 ```
 
 ## usage
@@ -14,7 +14,7 @@ wes install @wachaon/prettier
 When used as a script
 
 ```javascript
-const prettier = require('@wachaon/prettier')
+const prettier = require('@wachaon/fmt')
 
 const option = {
     tabWidth: 2
@@ -25,7 +25,7 @@ console.log(prettier.format(source, option))
 
 When used as a CLI
 ```shell
-wes @wachaon/prettier usage -w
+wes @wachaon/fmt usage -w
 ```
 
 ## CLI option
