@@ -72,11 +72,7 @@ function prettier_format(spec, opt = {}) {
     const parameter = Object.assign(defaultOption, _parameter)
 
     let result
-    try {
-        result = prettier.format(source, parameter)
-    } catch (error) {
-        console.log(error)
-    }
+    result = prettier.format(source, parameter)
 
     if (!CLI) return result
     if (canWritable) {
