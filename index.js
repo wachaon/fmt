@@ -1,8 +1,8 @@
 const { readTextFileSync, writeTextFileSync, existsFileSync } = require('filesystem')
 const { resolve, extname } = require('pathname')
 
-const prettier = require('node_modules/prettier')
-const babel = require('node_modules/babel.js')
+const prettier = require('prettier')
+const babel = require('babel')
 
 let defaultOption = {
     parser: 'babel',
@@ -10,7 +10,7 @@ let defaultOption = {
 }
 
 const prettierrc = resolve(process.cwd(), '.prettierrc')
-if ( existsFileSync(prettierrc) ) {
+if (existsFileSync(prettierrc)) {
     const optionrc = JSON.parse(readTextFileSync(prettierrc))
     defaultOption = Object.assign(defaultOption, optionrc)
 }
